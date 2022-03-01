@@ -132,23 +132,17 @@
 /* Esercizio 10 */
 .ex-10-icon {
     font-size: 60px;
+
+    animation: rotation_icon10 5s linear;
+    animation-iteration-count: infinite;
 }
 
 @keyframes rotation_icon10 {
     0% {
         transform: rotate(0deg);
     }
-    10% {
-        transform: rotate(36deg);
-    }
-    20% {
-        transform: rotate(72deg);
-    }
-    30% {
-        transform: rotate(108deg);
-    }
-    40% {
-        transform: rotate(0deg);
+    100% {
+        transform: rotate(360deg);
     }
 
 }
@@ -157,6 +151,24 @@
 /* Esercizio 11 */
 .ex-11-icon {
     font-size: 60px;
+}
+
+.ex-11-icon:hover {
+    animation: rotation_icon11 3s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation_icon11 {
+    0% {
+        transform: rotate(0deg);
+    }
+    90% {
+        transform: rotate(270deg);
+    } 
+    100% {
+        transform: rotate(0deg);
+    }
+
 }
 
 
